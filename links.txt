@@ -1,0 +1,7 @@
+https://hub.gke2.mybinder.org/user/matutenun-binderjulia-np9m2ot0/pluto/edit?id=2749bb28-b6be-11eb-1dfe-1f0afae169a3
+
+
+este va
+https://mybinder.org/v2/gh/matutenun/projectbinder2/main?urlpath=pluto/open?path=/home/jovyan/notebooks/BINDERtestD.jl
+
+https://mybinder.org/v2/gh/roualdes/plutonotebooks/main?urlpath=pluto/open?path=/home/jovyan/notebooks/beta.jl
