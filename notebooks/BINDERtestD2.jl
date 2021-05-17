@@ -14,12 +14,7 @@ macro bind(def, element)
 end
 
 # ╔═╡ a0b3813e-adab-11eb-2983-616cf2bb6f5e
-begin
-
-    import Pkg
-    
-    using LinearAlgebra, DifferentialEquations, StatsPlots, PlutoUI
-end
+using LinearAlgebra, DifferentialEquations, PlutoUI,Plots
 
 # ╔═╡ d84dbb08-b1a4-11eb-2d3b-0711fddd1347
 html"""
@@ -72,12 +67,9 @@ md"""
 
 # ╔═╡ 6139554e-c6c9-4252-9d64-042074f68391
 begin
-	f(y,a) =   sign(y)  + a+20 -  y
+	f(y,a) =   sign(y)  + a+1 -  y
 	f(y,a,t) = f(y,a) # just for the difeq solver
 end
-
-# ╔═╡ 991f14bb-fc4a-4505-a3be-5ced2fb148b6
-
 
 # ╔═╡ 61960e99-2932-4a8f-9e87-f64a7a043489
 md"""
@@ -157,25 +149,18 @@ end
 # ╔═╡ a4686bca-90d6-4e02-961c-59f08fc37553
 plotit(y₀, a)
 
-
-
-#
-
-
-
 # ╔═╡ Cell order:
 # ╟─d84dbb08-b1a4-11eb-2d3b-0711fddd1347
-# ╠═a0b3813e-adab-11eb-2983-616cf2bb6f5e
-# ╠═ef8d6690-720d-4772-a41f-b260d306b5b2
+# ╟─a0b3813e-adab-11eb-2983-616cf2bb6f5e
+# ╟─ef8d6690-720d-4772-a41f-b260d306b5b2
 # ╟─30969341-9079-4732-bf55-d6bba2c2c16c
-# ╠═6139554e-c6c9-4252-9d64-042074f68391
-# ╠═991f14bb-fc4a-4505-a3be-5ced2fb148b6
-# ╠═61960e99-2932-4a8f-9e87-f64a7a043489
-# ╠═6f61180d-6900-48fa-998d-36110e79d2dc
-# ╠═a09a0064-c6ab-4912-bc9f-96ab72b8bbca
-# ╠═5027e1f8-8c50-4538-949e-6c95c550016e
-# ╠═465f637c-0555-498b-a881-a2f6e5714cbb
-# ╠═a4686bca-90d6-4e02-961c-59f08fc37553
-# ╠═fb6e34b0-b4eb-11eb-3687-257bc18c3e52
-# ╠═bc96abb0-b4ea-11eb-21a1-fdd01945f9c6
+# ╟─6139554e-c6c9-4252-9d64-042074f68391
+# ╟─61960e99-2932-4a8f-9e87-f64a7a043489
+# ╟─6f61180d-6900-48fa-998d-36110e79d2dc
+# ╟─a09a0064-c6ab-4912-bc9f-96ab72b8bbca
+# ╟─5027e1f8-8c50-4538-949e-6c95c550016e
+# ╟─465f637c-0555-498b-a881-a2f6e5714cbb
+# ╟─a4686bca-90d6-4e02-961c-59f08fc37553
+# ╟─fb6e34b0-b4eb-11eb-3687-257bc18c3e52
+# ╟─bc96abb0-b4ea-11eb-21a1-fdd01945f9c6
 # ╟─f8ee2373-6af0-4d81-98fb-23bde10198ef
